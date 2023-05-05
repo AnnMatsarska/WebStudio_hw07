@@ -133,14 +133,14 @@ img {
 }
 
 /* mobile */
-/* @media screen and (max-width: 767px){
+@media screen and (max-width: 767px){
 
   .header-container {
     display: flex;
     align-items: center;
-    gap: 249px;
+    justify-content: space-between;
   }
-} */
+}
 
 
 .logo {
@@ -157,8 +157,6 @@ img {
   color: var(--primary-iris);
 }
 
-
-
 /* tablet */
 
 @media only screen and (max-width: 1157px) {
@@ -166,13 +164,6 @@ img {
     margin-right: 0;
   }
 }
-
-/* mobile */
-/* @media only screen and (max-width: 767px) {
-  .logo {
-    margin-right: 249px;
-  }
-} */
 
 
 .logo-dark {
