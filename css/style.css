@@ -531,15 +531,17 @@ img {
 }
 
 /* desktop */
-.team-section {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 120px;
-  padding-bottom: 120px;
-
-  background: var(--light-background-cloud);
+@media only screen and (min-width: 1158px) {
+  .team-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 120px 0 120px;
+  
+    background: var(--light-background-cloud);
 }
+}
+
 .team-title-item {
   text-align: center;
   margin-bottom: 8px;
@@ -554,11 +556,33 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-flex {
-  display: flex;
-  align-items: center;
-  gap: var(--indent);
+/* mobile */
+@media only screen and (min-width: 320px) {
+  .team-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px;
+  }
 }
+
+/* laptop */
+@media only screen and (min-width: 768px) {
+  .team-flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: var(--indent);
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1158px) {
+  .team-flex {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
 .team-position {
   display: flex;
   flex-direction: column;
@@ -598,21 +622,55 @@ img {
 }
 /* Customer section */
 
-.customer {
-  padding-top: 120px;
-  padding-bottom: 120px;
+/* mobile + laptop */
+@media only screen and (max-width: 1157px) {
+  .customer {
+    padding: 96px 0 96px;
+  }
 }
 
-.customer-list {
-  display: flex;
-  align-items: center;
-  gap: var(--indent);
+/* desktop */
+@media only screen and (min-width: 1158px) {
+  .customer {
+    padding: 120px 0 120px;
+  }
 }
 
-.customer-item {
-  width: 168px;
-  height: 88px;
+/* mobile */
+@media only screen and (min-width: 320px) {
+  .customer-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 72px;
+  }
 }
+
+/* desktop */
+@media only screen and (min-width: 1158px) {
+  .customer-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* mobile */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .customer-item {
+    flex-basis: calc((100% - 16px * (6-1)) / 2);
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .customer-item {
+    flex-basis: calc((100% - 24px * (6-1)) / 3);
+  }
+}
+
+
 .customer-link {
   display: flex;
   justify-content: center;
