@@ -36,8 +36,8 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
   }
 }
 
@@ -1046,12 +1046,11 @@ img {
 /* tablet */
 @media only screen and (min-width: 428px) {
   .subscribe-form-input {
-    width: 264px;
+    width: 398px;
   }
 }
-
-/* desktop */
-@media only screen and (min-width: 1158px) {
+/* tablet */
+@media only screen and (min-width: 768px) {
   .subscribe-form-input {
     width: 264px;
   }
@@ -1245,7 +1244,6 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
-  width: 408px;
   height: 584px;
   padding: 24px;
 
@@ -1258,6 +1256,24 @@ img {
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 250ms;
+}
+
+@media only screen and (max-width: 427px) {
+  .modal {
+    width: 90%;
+  }
+}
+/* mobile */
+@media only screen and (min-width: 428px) {
+  .modal {
+    width: 392px;
+  }
+}
+/* tablet+desktop */
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
 }
 
 .modal-btn {
