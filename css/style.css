@@ -749,9 +749,11 @@ img {
 }
 
 /* mobile */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+@media only screen and (max-width: 767px) {
   .customer-item {
-    flex-basis: calc((100% - 16px * (6-1)) / 2);
+    width: calc((100% - 16px) / 2);
+    height: 88px;
   }
 }
 
@@ -765,7 +767,7 @@ img {
 /* desktop */
 @media only screen and (min-width: 1158px) {
   .customer-item {
-    width: 168px;
+    width: calc((100% - 120px) / 6);
     height: 88px;
   }
 }
