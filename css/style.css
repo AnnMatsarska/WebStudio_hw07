@@ -112,6 +112,10 @@ img {
   align-items: center;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
 /* tablet */
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
