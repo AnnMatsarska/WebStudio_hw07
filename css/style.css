@@ -984,13 +984,6 @@ img {
   }
 }
 
-/*  tablet */
-@media only screen and (min-width: 768px) {
-  .subscribe-footer-form {
-    margin-left: 0px;
-  }
-}
-
 /* desktop */
 @media only screen and (min-width: 1158px) {
   .subscribe-footer-form {
