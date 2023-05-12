@@ -286,7 +286,7 @@ img {
   color: var(--secondary-navy-blue);
 }
 /* desktop */
-@media only screen and (min-width: 1158px) {
+/* @media only screen and (min-width: 1158px) {
   .undertext {
     font-weight: 400;
   }
@@ -295,7 +295,7 @@ img {
     font-size: 20px;
     font-weight: 500;
   }
-}
+} */
 
 .undertext {
   font-weight: 500;
@@ -626,7 +626,9 @@ img {
 }
 .team-text {
   text-align: center;
+  font-weight: 400;
 }
+
 .team-item {
   background-color: var(--background-white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -1268,21 +1270,24 @@ img {
 @media only screen and (max-width: 427px) {
   .modal {
     width: 90%;
-    height: 70%;
+    max-height: 584px;
+    height: 100%;
   }
 }
 /* mobile */
 @media only screen and (min-width: 428px) {
   .modal {
     width: 392px;
-    height: 60%;
+    max-height: 584px;
+    height: 100%;
   }
 }
 /* tablet+desktop */
 @media only screen and (min-width: 768px) {
   .modal {
     width: 408px;
-    height: 70%;
+    max-height: 584px;
+    height: 100%;
   }
 }
 
