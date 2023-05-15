@@ -1261,6 +1261,7 @@ img {
   .list-flex {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 48px;
   }
@@ -1270,6 +1271,7 @@ img {
 @media only screen and (min-width: 768px) {
   .list-flex {
     gap: var(--indent);
+    justify-content: left;
   }
 }
 
