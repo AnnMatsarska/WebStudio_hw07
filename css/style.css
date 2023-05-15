@@ -274,28 +274,20 @@ img {
   text-decoration: none;
 }
 
-.sub-item {
-  margin-bottom: 8px;
-
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-
-  color: var(--secondary-navy-blue);
-}
-/* desktop */
-/* @media only screen and (min-width: 1158px) {
-  .undertext {
-    font-weight: 400;
-  }
+/* mobile */
+@media only screen and (min-width: 320px) {
   .sub-item {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 500;
+    margin-bottom: 8px;
+
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-navy-blue);
   }
-} */
+}
 
 .undertext {
   font-weight: 500;
@@ -319,7 +311,6 @@ img {
     font-weight: 400;
   }
   .sub-item {
-    text-align: left;
     font-size: 20px;
     font-weight: 500;
   }
@@ -417,13 +408,6 @@ img {
         ),
         url(../images/background/people-office1desktop@2x.jpg);
     }
-  }
-}
-
-/* tablet */
-@media only screen and (min-width: 768px) {
-  .sub-item {
-    text-align: left;
   }
 }
 
@@ -1092,9 +1076,50 @@ img {
 /* portfolio */
 
 /*service section*/
-.serv-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+
+/* mobile */
+@media only screen and (min-width: 320px) {
+  .serv-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .serv-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 1158px) {
+  .serv-section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}
+
+/* mobile */
+@media only screen and (min-width: 320px) {
+  .serv-title {
+    margin-bottom: 8px;
+
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-navy-blue);
+  }
+  .serv-undertext {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-slate);
+  }
 }
 
 .btn {
@@ -1168,8 +1193,18 @@ img {
   color: var(--light-background-cloud);
 }
 
-.serv-item {
-  width: calc((100% - 48px) / 3);
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .serv-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1158px) {
+  .serv-item {
+    width: calc((100% - 48px) / 3);
+  }
 }
 
 .serv-item:hover,
@@ -1188,35 +1223,63 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-.serv-flex {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--indent);
-  justify-content: center;
-
-  margin-bottom: 72px;
-}
-
 /* mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .serv-flex {
+    display: flex;
+    gap: var(--indent);
+    justify-content: center;
     flex-wrap: wrap;
     justify-content: flex-start;
+
+    margin-bottom: 48px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .serv-flex {
+    display: flex;
+    gap: var(--indent);
+    justify-content: center;
+
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .serv-flex {
+    margin-bottom: 72px;
   }
 }
 
 .serv-flex-items {
   --items: 9;
 }
-.list-flex {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: var(--indent);
-  row-gap: 48px;
+
+/* mobile */
+@media only screen and (min-width: 320px) {
+  .list-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
+  }
 }
 
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .list-flex {
+    gap: var(--indent);
+  }
+}
+
+/* desctop */
+@media only screen and (min-width: 1158px) {
+  .list-flex {
+    column-gap: var(--indent);
+    row-gap: 48px;
+  }
+}
 /* Modal window */
 
 .backdrop {
